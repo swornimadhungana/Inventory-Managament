@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Categories</title>
+    <title>Inventory Management</title>
     <link rel="stylesheet" media="all"  href="../assets/css/categories.css" />
     <link rel="stylesheet" href="../assets/css/base.css">
   
