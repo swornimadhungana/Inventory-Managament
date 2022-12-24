@@ -1,0 +1,29 @@
+.photo img{
+    height:auto;
+    width:100%;
+    border:2px solid black;
+    border-radius:10px;
+    background-color: #dedede;
+    margin-top:1px;
+
+}
+.photo{
+  width:50%;
+}
+.container{
+  display: flex;
+  gap:50px;
+}
+.container ul li{
+    display: flex;
+    list-style: none;
+    padding:20px 0px;
+    font-size: 22px;
+}
+.container ul li:nth-child(1){
+  padding-top: 2px;
+}
+span{
+  font-weight: bold;
+  padding-right: 10px;
+}

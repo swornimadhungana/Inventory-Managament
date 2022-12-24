@@ -1,0 +1,50 @@
+.wrapper{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:calc(100vh - 350px);
+}
+  
+  .container form {
+    display: flex;
+    flex-direction:column; /* ||parentma display:flex garyoo vaneyy yesle child laii effect garxa, parent laii gardena*/
+    /* height: 300px; */
+    padding: 1rem 0;
+    width: 400px;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color:#dedede;
+  }
+  .container form > input, .container form .row > select{
+    font-size: 18px;
+      padding:8px;
+      margin:12px;
+  border-radius:10px;
+  border:2px solid black;
+  }
+.container form .row > select{
+    cursor: pointer;
+   
+}
+  .container form .row > select{
+    width: 30%;
+  }
+  .container form > label, .container form .row > label{
+      margin-left:10px;
+      font-size: 22px;
+      font-weight:500;
+      padding:1px;
+  }
+  #button{ /*id vayera #*/
+  margin:20px auto;/*40px y-axis ko vayo and auto garesi x-axis ma bichma auxa*/
+  height:42px;
+  width:125px;
+  cursor:pointer;
+  font-size: 20px;
+   font-weight: bolder;
+  padding:0.2px;
+  }
+  #button:hover{
+    background-color:#dedede;
+    font-weight: bolder;
+  }

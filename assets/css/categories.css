@@ -1,0 +1,27 @@
+table th,td{
+ border: 1.5px solid black;
+ padding:5px;
+text-align: center;
+font-size: 20px;
+}
+table{
+  width:80vw;
+  margin-top:20px;
+  border-collapse: collapse;
+}
+table th{
+  background-color: #dedede;
+}
+table td i{
+cursor: pointer;
+}
+button{
+    padding: 6px 6px;
+    margin-left: 63rem;
+    margin-top:8px;
+    margin-right:-6px;
+    font-size:18px;
+    font-weight: bold;
+    border-radius:5px;
+    cursor:pointer;
+}

@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.top {
+  /*border:1px solid red;*/
+  width: 100vw;
+  padding: 0px 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid black;
+  position: fixed;
+  inset: 0;/*mathi ra tala bata 0 ma layera page ma fix garxa*/
+  z-index: 100; /*bring to front*/
+  background-color: white;
+}
+.logo img {
+  height: 32px;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+gap:30px;
+}
+.fa-user{
+  padding-right:10px;
+ color: green;
+ 
+}
+.top ul {
+  list-style: none;
+}
+.logout {
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 6px;
+  background-color: #ececec;
+  font-weight: 600;
+}
+.logout:hover{
+  background-color: #dedede;
+}
+.add{
+  background-color: #ececec;
+  border-radius: 10px;
+  position:fixed;
+  right:635px;
+  top:8px;
+  padding:2px 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.shopname {
+  height: 40px;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid black;
+  top: 60px;
+  background-color: #dedede;
+  position: fixed;
+  font-weight: bolder;
+  font-size: 32px;
+  font-family: 'Lora', serif;
+}
+.side {
+  width: 300px;
+  height: calc(100vh - 100px);
+  border-right: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  transform: translateX(-100%);
+  transition: transform 0.2s ease;
+}
+.sideActive {
+  transform: translateX(0%);
+}
+.side ul {
+  list-style: none;
+  width: 100%;
+}
+.side ul li {
+  cursor: pointer;
+  padding: 20px;
+  border-bottom: 2px solid black;
+  width: 300px;
+  text-align: center;
+  font-size: 20px;
+  font-weight:bold;
+}
+.side ul li:hover{
+    background-color: #ececec;
+    border-right:2px solid;
+    
+}
+.back {
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+  border-bottom-right-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+.back:hover{
+  background-color: #dedede;
+  border-left:1.6px solid black;
+}
+.settings {
+position:fixed;
+  cursor: pointer;
+  left: 260px;
+ bottom: 20px;
+  font-size: 25px;
+}
+.wrapper{
+    margin-top:133px;
+    margin-left: 350px;
+    margin-right:50px;
+    transition: margin-right .3s ease;
+}
+.container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.wrapperactive{
+    margin-left:40px;
+}
