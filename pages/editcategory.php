@@ -51,7 +51,7 @@
         <li><a href="./categories.php">Category</a></li>
         <li><a href="./suppliers.php">Suppliers</a></li>
         <li><a href="./employee.php">Employee</a></li>
-        <a href="./settings.php"><i class="fa-solid fa-user-gear settings"></a></i>
+        <!-- <a href="./settings.php"><i class="fa-solid fa-user-gear settings"></a></i> -->
       </ul>
       <i class="fa-solid fa-angles-left back"></i>
     </nav>

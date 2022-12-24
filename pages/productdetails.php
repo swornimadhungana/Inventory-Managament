@@ -14,7 +14,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Product Details</title>
+  <title>Inventory Management</title>
   <link rel="stylesheet" media="all" href="../assets/css/productdetails.css" />
   <link rel="stylesheet" href="../assets/css/base.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -54,7 +54,7 @@
             <li><a href="./categories.php">Category</a></li>
             <li><a href="./suppliers.php">Suppliers</a></li>
             <li><a href="./employee.php">Employee</a></li>
-            <a href="./settings.php"><i class="fa-solid fa-user-gear settings"></a></i>
+            <!-- <a href="./settings.php"><i class="fa-solid fa-user-gear settings"></a></i> -->
           </ul>
           <i class="fa-solid fa-angles-left back"></i>
         </nav>
