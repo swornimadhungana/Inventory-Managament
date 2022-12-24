@@ -40,7 +40,7 @@ echo"<script>location.href='http://localhost/website/pages/userLogin.php'</scrip
 
     }
 }else{
-    echo "<script>alert('Some error occured.aPlease try again!')</script>";
+    echo "<script>alert('Some error occured.Please try again!')</script>";
     echo"<script>location.href='http://localhost/website/pages/userLogin.php''</script>";
   exit;
 }

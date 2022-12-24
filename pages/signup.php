@@ -20,7 +20,10 @@
 </head>
 <body>
 <nav class="top">    <div class="logo"><a href="../index.php"><img src="../assets/images/logo.jpg" alt="logo" /></a></div><div class="admin"><a href="./adminlogin.php">Admin</a></div></nav>
-    <form method="POST" action="../Function/usersignup.php" class="signupbox" ><h2 class="signup">Sign-Up</h2><!-- action le submit vayesi tyoo file ma pugxa with all data -->
+    <form method="POST" action="../Function/usersignup.php" class="signupbox" id="signup" onsubmit="return validate()" ><h2 
+    class="signup">Sign-Up</h2>
+    <p id="message"> </p>
+    <!-- action le submit vayesi tyoo file ma pugxa with all data and onsubmitle submit vayesi return ma true value xa vaneyy run garxa -->
 <label for="name" >Name:</label><input type="text" placeholder="Enter Name" id="Name" required name="name">
 <label for="email" >Email:</label><input type="text" placeholder="Email" id="email" required name="email">
 <label for="password">Password:</label><input type="password" placeholder="Password" id="password" required name="password"><!-- name="password" le form ko password ma type vako data laii name k through bata database sanga connect garxa -->
@@ -29,5 +32,6 @@
 <div class="acc"> Already have an account?<div class="login"><a href="./userlogin.php"> Log In</a></div></div></form>
 <!-- labelfor ko button laii paxi gayera id ko buttonle tanexa i.e connection and value vaneko je submit button vitra lekhxa tyoo i.e login -->
 <script src="../assets/js/base.js"></script>
+<script src="../assets/js/signup.js"></script>
 </body>
 </html>

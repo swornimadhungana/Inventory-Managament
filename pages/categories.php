@@ -31,7 +31,7 @@
     <nav class="top">
     <div class="logo"><a href="../index.php"><img src="../assets/images/logo.jpg" alt="logo" /></a><div class="username"><i class="fa-solid fa-user"></i><?php 
     if(isset($_SESSION['email'])){
-      $username=mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM `employee` WHERE Employee_email='".$_SESSION['email']."'"));
+      $username=mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM `employee` WHERE Employee_email='".$_SESSION['email']."'" ));
       echo $username['Employee_name'];
     }
     ?></div></div>
@@ -68,7 +68,7 @@
     <tbody>
 
     <?php 
-      $res = mysqli_query($conn, "SELECT * FROM category");
+      $res = mysqli_query($conn, "SELECT * FROM category ORDER BY Category_Name ASC");
       if(mysqli_num_rows($res) == 0){
         echo "<p>No records found</p>";
       }

@@ -68,7 +68,7 @@
     <tbody>
 
     <?php 
-      $res = mysqli_query($conn, "SELECT * FROM employee");
+      $res = mysqli_query($conn, "SELECT * FROM employee ORDER BY Employee_name ASC");
       if(mysqli_num_rows($res) == 0){
         echo "<p>No records found</p>";
       }

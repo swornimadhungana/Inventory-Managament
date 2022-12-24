@@ -68,7 +68,7 @@ session_start();
 <tbody>
 
 <?php 
-$res = mysqli_query($conn, "SELECT * FROM supplier");
+$res = mysqli_query($conn, "SELECT * FROM supplier ORDER BY Supplier_Name ASC");
 if(mysqli_num_rows($res) == 0){
  echo "<p>No records found</p>";
 }
