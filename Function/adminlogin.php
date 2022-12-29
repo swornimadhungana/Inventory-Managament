@@ -1,8 +1,7 @@
 <?php
 session_start();
-
-require("connect.php");
-if(isset($_SESSION['user'])){
+require("./connect.php");
+if(isset($_SESSION['user']) || isset($_SESSION['email'])){
     header("Location: ../pages/dashboard.php");/*redirect garxaa*/
 }
 if ($_POST){
@@ -33,7 +32,7 @@ echo"<script>location.href='http://localhost/website/pages/adminlogin.php'</scri
     }
 }else{
     echo "<script>alert('Some error occured.Please try again!')</script>";
-    echo"<script>location.href='http://localhost/website/pages/adminlogin.php''</script>";
+    echo"<script>location.href='http://localhost/website/pages/adminlogin.php'</script>";
   
 }
 ?>

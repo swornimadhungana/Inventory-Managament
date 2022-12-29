@@ -1,6 +1,6 @@
 <?php
 session_start();
-require("connect.php");
+require("./connect.php");
 if(isset($_SESSION['user'])){
     header("Location: ../pages/dashboard.php");/*redirect garxaa*/
 }
@@ -27,7 +27,7 @@ while($row=mysqli_fetch_assoc($res)){
 if($emaildb==$email && $passworddb==$password){
     $_SESSION["email"]=$emaildb;
 
-    if( $_SESSION["email"]==$emaildb){
+    if( $_SESSION["email"] == $emaildb){
         session_write_close();//sessionma variable write garera vyaiyo vaneko
         echo "<script>alert('Log-In Successful')</script>";
 echo"<script>location.href='http://localhost/website/pages/dashboard.php'</script>";
@@ -41,13 +41,13 @@ echo"<script>location.href='http://localhost/website/pages/userLogin.php'</scrip
     }
 }else{
     echo "<script>alert('Some error occured.Please try again!')</script>";
-    echo"<script>location.href='http://localhost/website/pages/userLogin.php''</script>";
+    echo"<script>location.href='http://localhost/website/pages/userLogin.php'</script>";
   exit;
 }
 }
 else{
     echo "<script>alert('Some error occured.Please try again!')</script>";
-    echo"<script>location.href='http://localhost/website/pages/userLogin.php''</script>";
+    echo"<script>location.href='http://localhost/website/pages/userLogin.php'</script>";
     exit;
 }
 ?>

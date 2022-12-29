@@ -7,7 +7,7 @@ const validate=()=> {
     return false;
     }
     if(password.value.length < 6){
-    message.innerText = "Password length is not enough!";
+    message.innerText = "Password should be atleast of 6 characters!";
     return false;
     }
 }

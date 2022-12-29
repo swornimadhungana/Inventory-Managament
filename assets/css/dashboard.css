@@ -13,7 +13,7 @@
     border-radius:6px;
      flex-direction: column;
      gap:10px;
-    background-color: #dedede;
+    background-color:#dedede;
     cursor:pointer;
     font-size:1.3rem;
 }

@@ -25,7 +25,7 @@
     <p id="message"> </p>
     <!-- action le submit vayesi tyoo file ma pugxa with all data and onsubmitle submit vayesi return ma true value xa vaneyy run garxa -->
 <label for="name" >Name:</label><input type="text" placeholder="Enter Name" id="Name" required name="name">
-<label for="email" >Email:</label><input type="text" placeholder="Email" id="email" required name="email">
+<label for="email" >Email:</label><input type="email" placeholder="Email" id="email" required name="email">
 <label for="password">Password:</label><input type="password" placeholder="Password" id="password" required name="password"><!-- name="password" le form ko password ma type vako data laii name k through bata database sanga connect garxa -->
 <label for="cpassword">Confirm Password:</label><input type="password" placeholder="Confirm Password" id="cpassword" required name="cpassword">
 <label for="button"></label><input type="submit" value="Sign-Up" id="button">
